@@ -1,0 +1,14 @@
+sentence-transformers==3.4.1
+chromadb>=0.6.0
+groq==0.15.0
+python-dotenv==1.0.1
+
+# Query interface:
+# NOTE: gradio 6.x requires huggingface-hub>=1.2, which conflicts with the
+# transformers/sentence-transformers pin (huggingface-hub<1.0). gradio 5.x
+# satisfies both, so we constrain to <6.
+gradio>=5.49,<6
+# streamlit>=1.40.0
+
+# Document ingestion — add if your documents/ folder contains .pdf files:
+# pdfplumber==0.11.4
